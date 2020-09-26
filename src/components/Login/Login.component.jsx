@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -28,8 +28,10 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function SignIn() {
+export default function Login({ handleLogin }) {
   const classes = useStyles();
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
   return (
     <Container component="main" maxWidth="xs">
@@ -50,6 +52,7 @@ export default function SignIn() {
             id="email"
             label="Email Address"
             name="email"
+            onChange={e => setEmail(e.target.value)}
             autoFocus
           />
           <TextField
@@ -61,7 +64,7 @@ export default function SignIn() {
             label="Password"
             type="password"
             id="password"
-            autoComplete="current-password"
+            onChange={e => setPassword(e.target.value)}
           />
           <Button
             type="submit"
@@ -69,6 +72,7 @@ export default function SignIn() {
             variant="contained"
             color="primary"
             className={classes.submit}
+            onClick={e => handleLogin(email, password)}
           >
             Sign In
           </Button>
