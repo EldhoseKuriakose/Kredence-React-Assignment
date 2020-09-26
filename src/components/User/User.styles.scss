@@ -1,0 +1,48 @@
+.user-container {
+
+    h1 {
+        font-family: sans-serif;
+        margin-left: 30px;
+        width: inherit;
+    }
+
+    .change-password-container {
+        display: flex;
+        flex-direction: row;
+
+        input {
+            width: 200px;
+            margin-top: 30px;
+            margin-left: 20px;
+            height: 30px;
+            padding-left: 10px;
+            outline: none;
+            font-family: sans-serif;
+        }
+    }
+
+    .button-container {
+        display: flex;
+        flex-direction: row;
+        width: 400px;
+        justify-content: space-around;
+        margin-top: 80px;
+
+        button {
+            width: 120px;
+            height: 50px;
+            border: none;
+            outline: none;
+            background-color: black;
+            color: white;
+            font-family: sans-serif;
+
+            &:hover {
+                cursor: pointer;
+                background-color: white;
+                color: black;
+                border: 1px solid black;
+            }
+        }
+    }
+}

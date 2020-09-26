@@ -8,6 +8,7 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import Home from '../Home/Home.component';
 import Tasks from '../Tasks/Tasks.component';
+import User from '../User/User.component';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -61,7 +62,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function NavTabs() {
+export default function NavTabs({ password, handleLogout, handlePasswordChange }) {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
 
@@ -90,7 +91,7 @@ export default function NavTabs() {
         <Tasks />
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Page Three
+        <User password={password} handleLogout={handleLogout} handlePasswordChange={handlePasswordChange} />
       </TabPanel>
     </div>
   );
