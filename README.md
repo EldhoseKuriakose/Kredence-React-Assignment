@@ -4,3 +4,7 @@
 1. Clone the repository to the system
 2. `npm install` - To install all packages
 3. `npm start` - To start the application
+
+#### Default Login
+`Username`: user@gmail.com
+`Password` : hello
