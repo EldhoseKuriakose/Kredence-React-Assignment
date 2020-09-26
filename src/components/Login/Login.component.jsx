@@ -47,9 +47,9 @@ export default function SignIn() {
             margin="normal"
             required
             fullWidth
-            id="username"
-            label="User Name"
-            name="username"
+            id="email"
+            label="Email Address"
+            name="email"
             autoFocus
           />
           <TextField
