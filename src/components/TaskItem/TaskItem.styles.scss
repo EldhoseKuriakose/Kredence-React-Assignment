@@ -14,21 +14,21 @@
         grid-column: 10/12;
 
             .delete-button {
-            color: white;
-            background-color: darkred;
-            border: none;
-            width: 70px;
-            height: 50px;
-            font-family: sans-serif;
-            font-weight: bold;
-            outline: none;
+                color: white;
+                background-color: darkred;
+                border: none;
+                width: 70px;
+                height: 50px;
+                font-family: sans-serif;
+                font-weight: bold;
+                outline: none;
 
-            &:hover {
-                cursor: pointer;
-                background-color: white;
-                color: darkred;
-                border: 1px solid darkred;
-            }
+                &:hover {
+                    cursor: pointer;
+                    background-color: white;
+                    color: darkred;
+                    border: 1px solid darkred;
+                }
         }
     }
 }
